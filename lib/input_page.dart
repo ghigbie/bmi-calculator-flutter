@@ -1,8 +1,8 @@
+import 'package:bmi_calculator/gender_card_child.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constants.dart';
 import 'card_main.dart';
-import 'male_card_child.dart';
-import 'female_card_child.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -25,11 +25,19 @@ class _InputPageState extends State<InputPage> {
                   Expanded(child: 
                     CardMain(
                       colour: ACTIVE_CARD_COLOR,
-                      cardChild: MaleCardChild())),
+                      cardChild: GenderCardChild(
+                        displayIcon: Icon(FontAwesomeIcons.mars, size: 80.0),
+                        displayText: 'MALE'),
+                        )
+                      ),
                   Expanded(child: 
                     CardMain(
                       colour: ACTIVE_CARD_COLOR,
-                      cardChild: FemaleCardChild(),))
+                      cardChild: GenderCardChild(
+                        displayIcon: Icon(FontAwesomeIcons.venus, size: 80.0),
+                        displayText: 'FEMALE')
+                     )
+                    )
                 ],
               ),
             ),
