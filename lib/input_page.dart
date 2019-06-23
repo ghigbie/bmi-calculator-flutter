@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'card_main.dart';
+import 'male_card_child.dart';
+import 'female_card_child.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -20,17 +22,26 @@ class _InputPageState extends State<InputPage> {
             Expanded(
               child: Row(
                 children: <Widget>[
-                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR)),
-                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR))
+                  Expanded(child: 
+                    CardMain(
+                      colour: ACTIVE_CARD_COLOR,
+                      cardChild: MaleCardChild())),
+                  Expanded(child: 
+                    CardMain(
+                      colour: ACTIVE_CARD_COLOR,
+                      cardChild: FemaleCardChild(),))
                 ],
               ),
             ),
-            Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR)),
+            Expanded(child: 
+              CardMain(colour: ACTIVE_CARD_COLOR)),
             Expanded(
               child: Row(
                 children: <Widget>[
-                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR)),
-                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR))
+                  Expanded(child: 
+                    CardMain(colour: ACTIVE_CARD_COLOR)),
+                  Expanded(child: 
+                    CardMain(colour: ACTIVE_CARD_COLOR))
                 ],
               ),
             ),
