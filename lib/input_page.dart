@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
-import 'card_small.dart';
-import 'card_large.dart';
 import 'card_main.dart';
 
 class InputPage extends StatefulWidget {
