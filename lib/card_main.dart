@@ -4,7 +4,7 @@ import 'constants.dart';
 class CardMain extends StatelessWidget{
 
   CardMain({@required this.colour});
-  Color colour;
+  final Color colour;
 
   @override
   Widget build(BuildContext context) {
