@@ -4,10 +4,10 @@ import 'card_small.dart';
 
 class InputPage extends StatefulWidget {
   @override
-  _InputPAgeState createState() => _InputPageState();
+  _InputPageState createState() => _InputPageState();
 }
 
-class _InputPAgeState extends State<InputPage> {
+class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
