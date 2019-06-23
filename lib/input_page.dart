@@ -33,6 +33,12 @@ class _InputPageState extends State<InputPage> {
                   Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT)))
                 ],
               ),
+            ),
+            Container(
+              color: Color(BOTTONM_CONTAINER_COLOR),
+              margin: EdgeInsets.only(top: BOTTOM_CARD_MARGIN),
+              width: double.infinity,
+              height: BOTTOM_CONTAINER_HEIGHT,
             )
           ],
         ),
