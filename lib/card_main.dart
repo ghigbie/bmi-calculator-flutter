@@ -3,12 +3,14 @@ import 'constants.dart';
 
 class CardMain extends StatelessWidget{
 
-  CardMain({@required this.colour});
+  CardMain({@required this.colour, this.cardChild});
   final Color colour;
+  final Widget cardChild;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      child: cardChild,
       margin: EdgeInsets.all(CARD_MARGIN),
       decoration: BoxDecoration(
         color: colour,
