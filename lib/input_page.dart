@@ -58,6 +58,9 @@ class _InputPageState extends State<InputPage> {
               margin: EdgeInsets.only(top: BOTTOM_CARD_MARGIN),
               width: double.infinity,
               height: BOTTOM_CONTAINER_HEIGHT,
+              child: Center(
+                child: Text(CALCULATE),
+              )
             )
           ],
         ),
