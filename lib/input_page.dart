@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'card_small.dart';
+import 'card_large.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -23,7 +24,7 @@ class _InputPageState extends State<InputPage> {
                 CardSmall(),
               ],
             ),
-            CardSmall(),
+            CardLarge(),
             Row(
               children: <Widget>[
                 CardSmall(),
