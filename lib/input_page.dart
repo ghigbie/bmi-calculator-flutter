@@ -20,22 +20,22 @@ class _InputPageState extends State<InputPage> {
             Expanded(
               child: Row(
                 children: <Widget>[
-                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT))),
-                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT)))
+                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR)),
+                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR))
                 ],
               ),
             ),
-            Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT))),
+            Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR)),
             Expanded(
               child: Row(
                 children: <Widget>[
-                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT))),
-                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT)))
+                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR)),
+                  Expanded(child: CardMain(colour: ACTIVE_CARD_COLOR))
                 ],
               ),
             ),
             Container(
-              color: Color(BOTTONM_CONTAINER_COLOR),
+              color: BOTTOM_CONTAINER_COLOR,
               margin: EdgeInsets.only(top: BOTTOM_CARD_MARGIN),
               width: double.infinity,
               height: BOTTOM_CONTAINER_HEIGHT,
