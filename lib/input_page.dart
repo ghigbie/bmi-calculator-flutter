@@ -14,22 +14,24 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: Text(APP_TITLE)
       ),
-      body: Column(
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              CardSmall(),
-              CardSmall(),
-            ],
-          ),
-          CardSmall(),
-          Row(
-            children: <Widget>[
-              CardSmall(),
-              CardSmall(),
-            ],
-          )
-        ],
+      body: Center(
+          child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                CardSmall(),
+                CardSmall(),
+              ],
+            ),
+            CardSmall(),
+            Row(
+              children: <Widget>[
+                CardSmall(),
+                CardSmall(),
+              ],
+            )
+          ],
+        ),
       )
     );
   }
