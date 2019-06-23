@@ -8,7 +8,7 @@ class CardLarge extends StatelessWidget{
       child: Container(
         margin: EdgeInsets.all(CARD_MARGIN),
         decoration: BoxDecoration(
-          color: Color(CARD_COLOR),
+          color: Color(CARD_COLOR_DEFAULT),
           borderRadius: BorderRadius.circular(CARD_RADIUS)
         )
       )
