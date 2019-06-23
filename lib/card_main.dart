@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 
 class CardMain extends StatelessWidget{
+
+  CardMain({this.colour});
+  Color colour;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(CARD_MARGIN),
       decoration: BoxDecoration(
-        color: Color(CARD_COLOR_DEFAULT)
+        color: colour,
+        borderRadius: BorderRadius.circular(CARD_RADIUS)
       ),
     );
   }

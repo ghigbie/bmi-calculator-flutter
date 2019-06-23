@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'card_small.dart';
 import 'card_large.dart';
+import 'card_main.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -18,18 +19,22 @@ class _InputPageState extends State<InputPage> {
       body: Center(
           child: Column(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                CardSmall(),
-                CardSmall(),
-              ],
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT))),
+                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT)))
+                ],
+              ),
             ),
-            CardLarge(),
-            Row(
-              children: <Widget>[
-                CardSmall(),
-                CardSmall(),
-              ],
+            Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT))),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT))),
+                  Expanded(child: CardMain(colour: Color(CARD_COLOR_DEFAULT)))
+                ],
+              ),
             )
           ],
         ),
