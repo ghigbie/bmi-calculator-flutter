@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constants.dart';
 import 'card_main.dart';
+import 'bottom_button.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -53,15 +54,7 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
-            Container(
-              color: BOTTOM_CONTAINER_COLOR,
-              margin: EdgeInsets.only(top: BOTTOM_CARD_MARGIN),
-              width: double.infinity,
-              height: BOTTOM_CONTAINER_HEIGHT,
-              child: Center(
-                child: Text(CALCULATE),
-              )
-            )
+            BottomButton(),
           ],
         ),
       )
