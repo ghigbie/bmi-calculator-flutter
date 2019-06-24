@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class GenderCardChild extends StatelessWidget{
 
   GenderCardChild({@required this.displayIcon, @required this.displayText});
-  final Icon displayIcon;
+  final IconData displayIcon;
   final String displayText;
 
   @override
@@ -12,7 +12,10 @@ class GenderCardChild extends StatelessWidget{
       return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          displayIcon,
+          Icon(
+            displayIcon,
+            size: 80.0
+          ),
           SizedBox(
             height: 15.0
           ),
