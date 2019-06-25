@@ -5,6 +5,11 @@ import 'constants.dart';
 import 'card_main.dart';
 import 'bottom_button.dart';
 
+enum Gender{
+  male,
+  female
+}
+
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -13,26 +18,7 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   Color maleCardColor = INACTIVE_CARD_COLOR;
   Color femaleCardColor = INACTIVE_CARD_COLOR;
-
-  void updateColor(int genderNumber){
-    if(genderNumber == 1){
-      if(maleCardColor == INACTIVE_CARD_COLOR){
-        maleCardColor = ACTIVE_CARD_COLOR;
-        femaleCardColor = INACTIVE_CARD_COLOR;
-      }else{
-        maleCardColor = INACTIVE_CARD_COLOR;
-        femaleCardColor = ACTIVE_CARD_COLOR;
-      }
-    }else if(genderNumber == 2){
-      if(femaleCardColor == INACTIVE_CARD_COLOR){
-        femaleCardColor = ACTIVE_CARD_COLOR;
-        maleCardColor = INACTIVE_CARD_COLOR;
-      }else{
-        femaleCardColor = INACTIVE_CARD_COLOR;
-        maleCardColor = ACTIVE_CARD_COLOR;
-      }
-    }
-  }
+  bool isMale = true;
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +36,12 @@ class _InputPageState extends State<InputPage> {
                     child: GestureDetector(
                       onTap: () { 
                         setState(() {
-                          updateColor(1);
+                          updateColor(Gender.male);
+                          isMale = true;
                         });
                         },
                       child: CardMain(
-                      colour: maleCardColor,
+                      colour: isMale? ACTIVE_CARD_COLOR : INACTIVE_CARD_COLOR,
                       cardChild: GenderCardChild(
                           icon: MALE_ICON,
                           label: MALE),
@@ -65,11 +52,12 @@ class _InputPageState extends State<InputPage> {
                     child: GestureDetector(
                       onTap: (){
                         setState(() {
-                          updateColor(2);
+                          updateColor(Gender.female);
+                          isMale = false;
                         });
                       },
                       child: CardMain(
-                      colour: femaleCardColor,
+                      colour: isMale ? INACTIVE_CARD_COLOR : ACTIVE_CARD_COLOR,
                       cardChild: GenderCardChild(
                           icon: FEMALE_ICON,
                           label: FEMALE)
