@@ -15,3 +15,7 @@ const double BOTTOM_CONTAINER_HEIGHT = 80.0;
 const double ICON_SIZE = 80.0;
 const IconData MALE_ICON = FontAwesomeIcons.mars;
 const IconData FEMALE_ICON = FontAwesomeIcons.venus;
+const LABEL_TEXT_STYLE = TextStyle(
+  fontSize: 18.0,
+  color: Color(0xFF8D8E98)
+);
