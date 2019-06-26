@@ -64,10 +64,26 @@ class _InputPageState extends State<InputPage> {
               child: CardMain(
                 colour: kActiveCarcColor,
                 cardChild: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       'Height',
-                      style: kLableTextStyle)
+                      style: kLableTextStyle),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
+                      children: <Widget>[
+                        Text(
+                          '180',
+                          style: kLargeTextStyle,
+                        ),
+                        Text(
+                          'cm',
+                          style: kLableTextStyle
+                        )
+                      ],
+                    )
                   ],
                 ),
               )
