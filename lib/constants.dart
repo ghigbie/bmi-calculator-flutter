@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-const String APP_TITLE = 'BMI Calculator';
-const String CALCULATE = 'CALCULATE';
-const String MALE = 'MALE';
-const String FEMALE = 'FEMALE';
+const String kAppTitle = 'BMI Calculator';
+const String kcalculate = 'CALCULATE';
+const String kmale = 'MALE';
+const String kFemale = 'FEMALE';
 const ACTIVE_CARD_COLOR = Color(0xFF1D1E33);
 const INACTIVE_CARD_COLOR = Color(0xFF111328);
 const BOTTOM_CONTAINER_COLOR = Color(0xFFEB1555);

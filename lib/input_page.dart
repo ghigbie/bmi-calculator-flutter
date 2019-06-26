@@ -22,7 +22,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(APP_TITLE)
+        title: Text(kAppTitle)
       ),
       body: Center(
           child: Column(
