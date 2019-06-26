@@ -14,10 +14,10 @@ class CardMain extends StatelessWidget{
           onTap: onPress,
           child: Container(
             child: cardChild,
-            margin: EdgeInsets.all(CARD_MARGIN),
+            margin: EdgeInsets.all(kCardMargin),
             decoration: BoxDecoration(
             color: colour,
-            borderRadius: BorderRadius.circular(CARD_RADIUS)
+            borderRadius: BorderRadius.circular(kCardRadius)
         ),
       ),
     );

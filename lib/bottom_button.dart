@@ -6,12 +6,12 @@ class BottomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: BOTTOM_CONTAINER_COLOR,
-      margin: EdgeInsets.only(top: BOTTOM_CARD_MARGIN),
+      color: kBottomContainerColor,
+      margin: EdgeInsets.only(top: kBottomCardMargin),
       width: double.infinity,
-      height: BOTTOM_CONTAINER_HEIGHT,
+      height: kBottomContainerHeight,
       child: Center(
-        child: Text(CALCULATE),
+        child: Text(kcalculate),
       )
     );
   }

@@ -26,6 +26,7 @@ class _InputPageState extends State<InputPage> {
       ),
       body: Center(
           child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Expanded(
               child: Row(
@@ -37,10 +38,10 @@ class _InputPageState extends State<InputPage> {
                         selectedGender = Gender.male;
                       });
                     },
-                    colour: selectedGender == Gender.male ? ACTIVE_CARD_COLOR : INACTIVE_CARD_COLOR,
+                    colour: selectedGender == Gender.male ? kActiveCarcColor : kInactiveCardColor,
                     cardChild: GenderCardChild(
-                        icon: MALE_ICON,
-                        label: MALE),
+                        icon: kMaleIcon,
+                        label: kmale),
                         )
                       ),
                   Expanded(
@@ -50,24 +51,34 @@ class _InputPageState extends State<InputPage> {
                           selectedGender = Gender.female;
                         });
                       },
-                      colour: selectedGender == Gender.female ? ACTIVE_CARD_COLOR : INACTIVE_CARD_COLOR,
+                      colour: selectedGender == Gender.female ? kActiveCarcColor : kInactiveCardColor,
                       cardChild: GenderCardChild(
-                          icon: FEMALE_ICON,
-                          label: FEMALE)
+                          icon: kFemaleIcon,
+                          label: kFemale)
                      )
                     )
                 ],
               ),
             ),
-            Expanded(child: 
-              CardMain(colour: ACTIVE_CARD_COLOR)),
+            Expanded(
+              child: CardMain(
+                colour: kActiveCarcColor,
+                cardChild: Column(
+                  children: <Widget>[
+                    Text(
+                      'Height',
+                      style: kLableTextStyle)
+                  ],
+                ),
+              )
+            ),
             Expanded(
               child: Row(
                 children: <Widget>[
                   Expanded(child: 
-                    CardMain(colour: ACTIVE_CARD_COLOR)),
+                    CardMain(colour: kActiveCarcColor)),
                   Expanded(child: 
-                    CardMain(colour: ACTIVE_CARD_COLOR))
+                    CardMain(colour: kActiveCarcColor))
                 ],
               ),
             ),
