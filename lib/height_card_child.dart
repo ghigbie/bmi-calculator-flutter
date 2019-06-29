@@ -14,7 +14,7 @@ class _HeightCardChildState extends State<HeightCardChild> {
   Widget build(BuildContext context) {
     return Expanded(
               child: CardMain(
-                colour: kActiveCarcColor,
+                colour: kActiveCardColor,
                 cardChild: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[

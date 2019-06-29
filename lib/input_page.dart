@@ -39,7 +39,7 @@ class _InputPageState extends State<InputPage> {
                         selectedGender = Gender.male;
                       });
                     },
-                    colour: selectedGender == Gender.male ? kActiveCarcColor : kInactiveCardColor,
+                    colour: selectedGender == Gender.male ? kActiveCardColor : kInactiveCardColor,
                     cardChild: GenderCardChild(
                         icon: kMaleIcon,
                         label: kmale),
@@ -113,9 +113,9 @@ class _InputPageState extends State<InputPage> {
               child: Row(
                 children: <Widget>[
                   Expanded(child: 
-                    CardMain(colour: kActiveCarcColor)),
+                    CardMain(colour: kActiveCardColor)),
                   Expanded(child: 
-                    CardMain(colour: kActiveCarcColor))
+                    CardMain(colour: kActiveCardColor))
                 ],
               ),
             ),
