@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constants.dart';
 import 'card_main.dart';
 import 'bottom_button.dart';
+import 'bottom_weight_card.dart';
 
 enum Gender{
   male,
@@ -112,8 +113,8 @@ class _InputPageState extends State<InputPage> {
             Expanded(
               child: Row(
                 children: <Widget>[
-                  Expanded(child: 
-                    CardMain(colour: kActiveCardColor)),
+                  Expanded(child: BottomWeightCard()),
+                    
                   Expanded(child: 
                     CardMain(colour: kActiveCardColor))
                 ],
