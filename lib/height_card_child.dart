@@ -51,6 +51,6 @@ class _HeightCardChildState extends State<HeightCardChild> {
                   ],
                 ),
               )
-            ),;
+            );
   }
 }
