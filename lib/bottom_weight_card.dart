@@ -23,6 +23,9 @@ class _BottomWeightCardState extends State<BottomWeightCard> {
             style: kLableTextStyle
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
             children: <Widget>[
               Text(
                 weight.toString(),

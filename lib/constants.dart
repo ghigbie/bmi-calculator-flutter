@@ -9,6 +9,7 @@ const kActiveCardColor = Color(0xFF1D1E33);
 const kInactiveCardColor = Color(0xFF111328);
 const kPinkColor = Color(0xFFEB1555);
 const kPinkTransparent = Color(0x15EB1555);
+const kRoundButtonColor = Color(0xFF4C4F5E);
 const double kCardMargin = 15.0;
 const double kCardRadius = 10.0;
 const double kBottomCardMargin = 10.0;
