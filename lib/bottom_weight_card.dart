@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'card_main.dart';
+import 'round_icon_button.dart';
 import 'constants.dart';
 
 class BottomWeightCard extends StatefulWidget {
@@ -39,24 +41,9 @@ class _BottomWeightCardState extends State<BottomWeightCard> {
           ),
           Row(
             children: <Widget>[
-              FlatButton(
-                onPressed: () {
-                  print('moo weight');
-                },
-                child: Text(
-                  '-',
-                  style: kLargeTextStyle,
-                  ),
-              ),
-              FlatButton(
-                onPressed: (){
-                  print('moo age');
-                },
-                child: Text(
-                  '+',
-                  style: kLargeTextStyle,
-                )
-              )
+              RoundIconButton(icon: FontAwesomeIcons.plus),
+              SizedBox(width: 10.0),
+              RoundIconButton(icon: FontAwesomeIcons.minus)
             ],
           )
         ],
