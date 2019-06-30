@@ -4,14 +4,14 @@ import 'constants.dart';
 
 class RoundIconButton extends StatelessWidget {
   
-  RoundIconButton({this.child});
+  RoundIconButton({this.icon});
 
-  final Widget child;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      child: child,
+      child: Icon(icon),
       onPressed: (){
         print('button pressed');
       },

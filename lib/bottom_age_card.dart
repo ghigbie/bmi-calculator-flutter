@@ -41,9 +41,12 @@ class _BottomAgeCardState extends State<BottomAgeCard> {
                 onPressed: (){
                   print('moo age up');
                 },
-                child: Text(
-                  '+',
-                  style: kLargeTextStyle
+                child: Container(
+                  
+                  child: Text(
+                    '+',
+                    style: kLargeTextStyle
+                  ),
                 )
               ),
             ],
