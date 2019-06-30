@@ -20,11 +20,11 @@ class _BottomAgeCardState extends State<BottomAgeCard> {
         children: <Widget>[
           Text(
             'AGE',
-            style: kLargeTextStyle,
+            style: kLableTextStyle
           ),
           Text(
             age.toString(),
-            style: kLableTextStyle,
+            style: kLargeTextStyle,
               ),
           Row(
             children: <Widget>[
