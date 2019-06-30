@@ -15,7 +15,7 @@ class RoundIconButton extends StatelessWidget {
       onPressed: (){
         print('button pressed');
       },
-      elevation: 6.0,
+      elevation: 0.0,
       constraints: BoxConstraints.tightFor(
         width: 56.0,
         height: 56.0
