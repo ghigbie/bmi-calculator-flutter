@@ -40,6 +40,7 @@ class _BottomWeightCardState extends State<BottomWeightCard> {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RoundIconButton(icon: FontAwesomeIcons.plus),
               SizedBox(width: 10.0),
