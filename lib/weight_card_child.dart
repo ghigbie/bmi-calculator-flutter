@@ -31,10 +31,7 @@ class _WeightCardChildState extends State<WeightCardChild> {
                   weigth.toString(),
                   style: kLargeTextStyle,
                 ),
-                Text(
-                  'cm',
-                  style: kLableTextStyle
-                )
+
               ],
             ),
             Slider(
