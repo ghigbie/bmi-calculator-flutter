@@ -31,9 +31,21 @@ class _BottomAgeCardState extends State<BottomAgeCard> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              RoundIconButton(icon: FontAwesomeIcons.plus),
+              RoundIconButton(
+                icon: FontAwesomeIcons.plus,
+                onPressed: (){
+                  setState((){
+                    age++;
+                  });
+                }),
               SizedBox(width: 10.0),
-              RoundIconButton(icon: FontAwesomeIcons.minus),
+              RoundIconButton(
+                icon: FontAwesomeIcons.minus,
+                onPressed: (){
+                  setState((){
+                    age--;
+                  });
+                }),
             ],
           ),
           ],
