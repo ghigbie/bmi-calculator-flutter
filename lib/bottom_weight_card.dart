@@ -39,19 +39,19 @@ class _BottomWeightCardState extends State<BottomWeightCard> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RoundIconButton(
-                icon: FontAwesomeIcons.plus,
+                icon: FontAwesomeIcons.minus,
                 onPressed: () {
                   setState((){
-                    weight++;
+                    weight--;
                   });
                 }
                 ),
               SizedBox(width: 10.0),
               RoundIconButton(
-                icon: FontAwesomeIcons.minus,
+                icon: FontAwesomeIcons.plus,
                 onPressed: (){
                   setState((){
-                    weight--;
+                    weight++;
                   });
                 }
                 ),
