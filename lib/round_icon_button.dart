@@ -4,7 +4,7 @@ import 'constants.dart';
 
 class RoundIconButton extends StatelessWidget {
   
-  RoundIconButton({this.icon, this.onPressed});
+  RoundIconButton({@required this.icon, @required this.onPressed});
 
   final IconData icon;
   final Function onPressed;
