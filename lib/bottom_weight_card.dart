@@ -33,10 +33,6 @@ class _BottomWeightCardState extends State<BottomWeightCard> {
                 weight.toString(),
                 style: kLargeTextStyle,
               ),
-              Text(
-                'kg',
-                style: kLableTextStyle
-              )
             ],
           ),
           Row(
