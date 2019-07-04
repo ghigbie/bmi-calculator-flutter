@@ -22,7 +22,7 @@ class _BottomWeightCardState extends State<BottomWeightCard> {
         children: <Widget>[
           Text(
             'WEIGHT',
-            style: kLableTextStyle
+            style: kLabelTextStyle
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

@@ -20,7 +20,7 @@ class GenderCardChild extends StatelessWidget{
                 SizedBox(
                   height: 15.0
                 ),
-                Text(label, style: kLableTextStyle)
+                Text(label, style: kLabelTextStyle)
         ],
       );
     }

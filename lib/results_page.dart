@@ -10,13 +10,10 @@ class ResultsPage extends StatelessWidget {
           'YOUR RESULT',
           style: kLargeHeaderStyles,),
       ),
-      body: Center(
-        child: FlatButton(
-          child: Text('Yo!'),
-          onPressed: (){
-            Navigator.pushNamed(context, '/');
-          },
-        ),
+      body: Column(
+        children: <Widget>[
+          
+        ],
       )
     );
   }
