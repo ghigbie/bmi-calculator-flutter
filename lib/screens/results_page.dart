@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'results_card.dart';
-import 'large_bottom_button.dart';
-import 'constants.dart';
+import 'package:bmi_calculator/components/results_card.dart';
+import 'package:bmi_calculator/components/large_bottom_button.dart';
+import 'package:bmi_calculator/constants/constants.dart';
 
 class ResultsPage extends StatelessWidget {
   @override

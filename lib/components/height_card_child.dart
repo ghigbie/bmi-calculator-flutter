@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'card_main.dart';
-import 'constants.dart';
+import 'package:bmi_calculator/constants/constants.dart';
 
 class HeightCardChild extends StatefulWidget {
   @override
