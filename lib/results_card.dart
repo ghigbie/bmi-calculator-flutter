@@ -8,9 +8,9 @@ class ResultsCard extends StatefulWidget {
   _ResultsCardState createState() => _ResultsCardState();
 }
 
-double bmi;
-String summaryBMI;
-String descriptionBMI;
+double bmi = 0.0;
+String summaryBMI = 'Normal';
+String descriptionBMI = 'There some stuff to put here"';
 
 class _ResultsCardState extends State<ResultsCard> {
   @override

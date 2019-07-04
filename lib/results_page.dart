@@ -8,13 +8,18 @@ class ResultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'YOUR RESULT',
-          style: kLargeHeaderStyles,),
+        title: Text('BMI Calculator'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-
+          Expanded(
+            child: Container(
+              child: Text('Your Result'),
+              style: 
+            )
+          ),
+          ResultsCard(),
           LargeBottomButton(
             buttonText: 'RE-CALCULATE',
             onTap: (){
