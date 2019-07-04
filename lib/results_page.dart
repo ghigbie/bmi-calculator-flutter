@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'results_card.dart';
+import 'large_bottom_button.dart';
 import 'constants.dart';
 
 class ResultsPage extends StatelessWidget {
@@ -12,7 +14,13 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          
+
+          LargeBottomButton(
+            buttonText: 'RE-CALCULATE',
+            onTap: (){
+              Navigator.pushNamed(context, '/');
+            },
+          ),
         ],
       )
     );

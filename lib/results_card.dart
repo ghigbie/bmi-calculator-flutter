@@ -28,11 +28,8 @@ class _ResultsCardState extends State<ResultsCard> {
             bmi.toString(),
             style: kLargeTextStyle
           ),
-          LargeBottomButton(
-            buttonText: 'RE-CALCULATE',
-            onTap: (){
-              Navigator.pushNamed(context, '/');
-            },
+          Text(
+            descriptionBMI
           )
         ]
       ),
