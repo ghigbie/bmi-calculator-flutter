@@ -29,7 +29,7 @@ class ResultsPage extends StatelessWidget {
           LargeBottomButton(
             buttonText: 'RE-CALCULATE',
             onTap: (){
-              Navigator.pushNamed(context, '/');
+              Navigator.pop(context);
             },
           ),
         ],
