@@ -120,7 +120,11 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
-            BottomButton(),
+            BottomButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/results');
+              }
+            ),
           ],
         ),
       )
