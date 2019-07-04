@@ -30,6 +30,11 @@ const kLageButtonTextStyles = TextStyle(
   fontWeight: FontWeight.bold
 );
 const kLargeHeaderStyles = TextStyle(
-  fontSize: 60.0,
+  fontSize: 50.0,
   fontWeight: FontWeight.bold
+);
+const kResultsTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
 );

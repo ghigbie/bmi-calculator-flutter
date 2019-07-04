@@ -12,14 +12,20 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
             child: Container(
-              child: Text('Your Result'),
-              style: 
+              child: Text(
+                'Your Result',
+                style: kLargeHeaderStyles,
+              ),
             )
           ),
-          ResultsCard(),
+          Expanded(
+            flex: 5,
+            child: ResultsCard(),
+          ),
           LargeBottomButton(
             buttonText: 'RE-CALCULATE',
             onTap: (){

@@ -9,7 +9,7 @@ class ResultsCard extends StatefulWidget {
 }
 
 double bmi = 0.0;
-String summaryBMI = 'Normal';
+String result = 'Normal';
 String descriptionBMI = 'There some stuff to put here"';
 
 class _ResultsCardState extends State<ResultsCard> {
@@ -18,11 +18,12 @@ class _ResultsCardState extends State<ResultsCard> {
     return CardMain(
       colour: kActiveCardColor,
       cardChild: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text(
-            summaryBMI,
-            style: kLabelTextStyle
+            result,
+            style: kResultsTextStyle
           ),
           Text(
             bmi.toString(),
