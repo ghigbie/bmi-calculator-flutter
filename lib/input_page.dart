@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constants.dart';
 import 'card_main.dart';
-import 'bottom_button.dart';
+import 'large_bottom_button.dart';
 import 'bottom_weight_card.dart';
 import 'bottom_age_card.dart';
 
@@ -120,7 +120,7 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
-            BottomButton(
+            LargeBottomButton(
               onTap: (){
                 Navigator.pushNamed(context, '/results');
               }
