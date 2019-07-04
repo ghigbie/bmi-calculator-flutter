@@ -6,7 +6,9 @@ class ResultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text(
+          'YOUR RESULT',
+          style: kLargeHeaderStyles,),
       ),
       body: Center(
         child: FlatButton(

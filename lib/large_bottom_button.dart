@@ -3,8 +3,9 @@ import 'constants.dart';
 
 class LargeBottomButton extends StatelessWidget {
 
-  LargeBottomButton({@required this.onTap});
+  LargeBottomButton({this.buttonText, @required this.onTap});
 
+  final String buttonText;
   final Function onTap;
 
   @override
@@ -12,14 +13,15 @@ class LargeBottomButton extends StatelessWidget {
     return GestureDetector(
             onTap: onTap,
             child: Container(
-            color: kPinkColor,
-            margin: EdgeInsets.only(top: kBottomCardMargin),
-            width: double.infinity,
-            height: kBottomContainerHeight,
-            child: Center(
-              child: Text(
-                kcalculate,
-                style: kLageButtonTextStyles,
+              color: kPinkColor,
+              margin: EdgeInsets.only(top: kBottomCardMargin),
+              width: double.infinity,
+              height: kBottomContainerHeight,
+              padding:EdgeInsets.only(bottom: 20.0),
+              child: Center(
+                child: Text(
+                  buttonText,
+                  style: kLageButtonTextStyles,
           ),
         )
       ),
