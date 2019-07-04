@@ -3,23 +3,23 @@ import 'constants.dart';
 
 class BottomButton extends StatelessWidget {
 
-  BottomButton({@required this.onPressed});
+  BottomButton({@required this.onTap});
 
-  final Function onPressed;
+  final Function onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: kPinkColor,
-      margin: EdgeInsets.only(top: kBottomCardMargin),
-      width: double.infinity,
-      height: kBottomContainerHeight,
-      child: Center(
-        child: FlatButton(
-          child: Text(kcalculate),
-          onPressed: onPressed,
-          ),
-      )
+    return GestureDetector(
+            onTap: onTap,
+            child: Container(
+            color: kPinkColor,
+            margin: EdgeInsets.only(top: kBottomCardMargin),
+            width: double.infinity,
+            height: kBottomContainerHeight,
+            child: Center(
+              child: Text(kcalculate),
+        )
+      ),
     );
   }
 }
