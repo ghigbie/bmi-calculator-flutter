@@ -4,6 +4,12 @@ import 'package:bmi_calculator/components/large_bottom_button.dart';
 import 'package:bmi_calculator/constants/constants.dart';
 
 class ResultsPage extends StatelessWidget {
+
+  ResultsPage({@required this.bmiResult, @required this.resultText, @required this.interpretation});
+  final String bmiResult;
+  final String resultText;
+  final String interpretation;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -6,6 +6,7 @@ import 'package:bmi_calculator/components/card_main.dart';
 import 'package:bmi_calculator/components/large_bottom_button.dart';
 import 'package:bmi_calculator/components/bottom_weight_card.dart';
 import 'package:bmi_calculator/components/bottom_age_card.dart';
+import 'package:bmi_calculator/calculator_brain.dart';
 
 enum Gender{
   male,
@@ -123,6 +124,10 @@ class _InputPageState extends State<InputPage> {
             LargeBottomButton(
               buttonText: 'CALCULATE',
               onTap: (){
+                CalculatorBrain calculatorBrain = CalculatorBrain(
+                  height: height,
+                  weight: weight,
+                );
                 Navigator.pushNamed(context, '/results');
               }
             ),
