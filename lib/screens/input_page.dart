@@ -7,6 +7,7 @@ import 'package:bmi_calculator/components/large_bottom_button.dart';
 import 'package:bmi_calculator/components/bottom_weight_card.dart';
 import 'package:bmi_calculator/components/bottom_age_card.dart';
 import 'package:bmi_calculator/calculator_brain.dart';
+import 'package:bmi_calculator/screens/results_page.dart';
 
 enum Gender{
   male,
@@ -128,7 +129,16 @@ class _InputPageState extends State<InputPage> {
                   height: height,
                   weight: weight,
                 );
-                Navigator.pushNamed(context, '/results');
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => ResultsPage(
+                      bmiResult: calculatorBrain.calculateBMI(),
+                      resultText: calculatorBrain.getResult(),
+                      interpretation: calculatorBrain.getInterpretation(),
+                    )
+                  ),
+                );
               }
             ),
           ],
