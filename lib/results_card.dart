@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'card_main.dart';
+import 'large_bottom_button.dart';
 import 'constants.dart';
 
 class ResultsCard extends StatefulWidget {
@@ -24,7 +25,14 @@ class _ResultsCardState extends State<ResultsCard> {
             style: kLabelTextStyle
           ),
           Text(
-            bmi.toString()
+            bmi.toString(),
+            style: kLargeTextStyle
+          ),
+          LargeBottomButton(
+            buttonText: 'RE-CALCULATE',
+            onTap: (){
+              Navigator.pushNamed(context, '/');
+            },
           )
         ]
       ),
