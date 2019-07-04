@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'card_main.dart';
 import 'package:bmi_calculator/constants/constants.dart';
 
-class ResultsCard extends StatefulWidget {
-  @override
-  _ResultsCardState createState() => _ResultsCardState();
-}
+class ResultsCard extends StatelessWidget {
 
-double bmi = 18.3;
-String result = 'Normal';
-String interpretationBMI = 'Your BMI result is quite low, you should eat more!';
+  ResultsCard({@required this.bmiResult, 
+               @required this.resultText, 
+               @required this.interpretation});
 
-class _ResultsCardState extends State<ResultsCard> {
+  String bmiResult;
+  String resultText;
+  String interpretation;
+
   @override
   Widget build(BuildContext context) {
     return CardMain(
@@ -21,17 +21,17 @@ class _ResultsCardState extends State<ResultsCard> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text(
-            result,
+            resultText,
             style: kResultsTextStyle
           ),
           Text(
-            bmi.toString(),
+            bmiResult,
             style: kBMITextStyle
           ),
           Padding(
               padding: EdgeInsets.only(left: 20.0, right: 20.0),
               child: Text(
-                interpretationBMI,
+                interpretation,
                 style: kInterpretationTextStyle,
                 textAlign: TextAlign.start,
             ),
@@ -41,3 +41,4 @@ class _ResultsCardState extends State<ResultsCard> {
     );
   }
 }
+

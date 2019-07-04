@@ -32,7 +32,11 @@ class ResultsPage extends StatelessWidget {
           ),
           Expanded(
             flex: 5,
-            child: ResultsCard(),
+            child: ResultsCard(
+              bmiResult: bmiResult,
+              resultText: resultText,
+              interpretation: interpretation
+            ),
           ),
           LargeBottomButton(
             buttonText: 'RE-CALCULATE',
