@@ -10,7 +10,10 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Center(
         child: FlatButton(
-          child: Text('Yo!')
+          child: Text('Yo!'),
+          onPressed: (){
+            Navigator.pushNamed(context, '/');
+          },
         ),
       )
     );
