@@ -3,6 +3,10 @@ import 'constants.dart';
 
 class BottomButton extends StatelessWidget {
 
+  BottomButton({@required this.onPressed});
+
+  final Function onPressed;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,7 +15,10 @@ class BottomButton extends StatelessWidget {
       width: double.infinity,
       height: kBottomContainerHeight,
       child: Center(
-        child: Text(kcalculate),
+        child: FlatButton(
+          child: Text(kcalculate),
+          onPressed: onPressed,
+          ),
       )
     );
   }
