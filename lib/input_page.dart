@@ -71,7 +71,7 @@ class _InputPageState extends State<InputPage> {
                   children: <Widget>[
                     Text(
                       'HEIGHT',
-                      style: kLableTextStyle),
+                      style: kLabelTextStyle),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -83,7 +83,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Text(
                           'cm',
-                          style: kLableTextStyle
+                          style: kLabelTextStyle
                         )
                       ],
                     ),

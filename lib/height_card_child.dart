@@ -20,7 +20,7 @@ class _HeightCardChildState extends State<HeightCardChild> {
                   children: <Widget>[
                     Text(
                       'HEIGHT',
-                      style: kLableTextStyle),
+                      style: kLabelTextStyle),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -32,7 +32,7 @@ class _HeightCardChildState extends State<HeightCardChild> {
                         ),
                         Text(
                           'cm',
-                          style: kLableTextStyle
+                          style: kLabelTextStyle
                         )
                       ],
                     ),

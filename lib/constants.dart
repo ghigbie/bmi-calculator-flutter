@@ -17,7 +17,7 @@ const double kBottomContainerHeight = 80.0;
 const double kIconSize = 80.0;
 const IconData kMaleIcon = FontAwesomeIcons.mars;
 const IconData kFemaleIcon = FontAwesomeIcons.venus;
-const kLableTextStyle = TextStyle(
+const kLabelTextStyle = TextStyle(
   fontSize: 18.0,
   color: Color(0xFF8D8E98)
 );
