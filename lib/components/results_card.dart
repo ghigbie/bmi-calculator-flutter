@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'card_main.dart';
-import 'large_bottom_button.dart';
-import 'constants.dart';
+import 'package:bmi_calculator/constants/constants.dart';
 
 class ResultsCard extends StatefulWidget {
   @override
@@ -29,9 +28,13 @@ class _ResultsCardState extends State<ResultsCard> {
             bmi.toString(),
             style: kBMITextStyle
           ),
-          Text(
-            interpretationBMI,
-            style: kDescriptionSTextyle
+          Padding(
+              padding: EdgeInsets.only(left: 20.0, right: 20.0),
+              child: Text(
+                interpretationBMI,
+                style: kInterpretationTextStyle,
+                textAlign: TextAlign.start,
+            ),
           )
         ]
       ),

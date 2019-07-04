@@ -42,6 +42,6 @@ const kBMITextStyle = TextStyle(
   fontSize: 100.0,
   fontWeight: FontWeight.bold,
 );
-const kDescriptionSTextyle = TextStyle(
+const kInterpretationTextStyle = TextStyle(
   fontSize: 22.0,
 );
