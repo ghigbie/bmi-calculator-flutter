@@ -9,7 +9,7 @@ class CalculatorBrain {
   double _bmi;
 
   String calculateBMI(){
-    double _bmi = weight / pow(height/100, 2); //height needs to be converted from cm to meters and thus is divided by 100
+    _bmi = weight / pow(height/100, 2); //height needs to be converted from cm to meters and thus is divided by 100
     return _bmi.toStringAsFixed(1);
   }
 
@@ -23,5 +23,13 @@ class CalculatorBrain {
     }
   }
 
-
+  String getInterpretation(){
+    if(_bmi > 25){
+      return 'You have a higher than normal BMI. You should exercise more';
+    }else if(_bmi >= 18.5){
+      return 'Your BMI is normal. Good job!';
+    }else{
+      return 'You have a lower than normal BMI. You can eat a bit more' ;
+    }
+  }
 }
