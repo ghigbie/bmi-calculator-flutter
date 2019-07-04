@@ -8,9 +8,9 @@ class ResultsCard extends StatefulWidget {
   _ResultsCardState createState() => _ResultsCardState();
 }
 
-double bmi = 0.0;
+double bmi = 18.3;
 String result = 'Normal';
-String descriptionBMI = 'There some stuff to put here"';
+String descriptionBMI = 'Your BMI result is quite low, you should eat more!';
 
 class _ResultsCardState extends State<ResultsCard> {
   @override
@@ -27,10 +27,11 @@ class _ResultsCardState extends State<ResultsCard> {
           ),
           Text(
             bmi.toString(),
-            style: kLargeTextStyle
+            style: kBMITextStyle
           ),
           Text(
-            descriptionBMI
+            descriptionBMI,
+            style: kDescriptionSTextyle
           )
         ]
       ),
